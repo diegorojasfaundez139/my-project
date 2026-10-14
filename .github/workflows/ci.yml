@@ -22,11 +22,13 @@ jobs:
     - uses: actions/checkout@v2 # Este paso hace que GitHub Actions descargue/cloné tu repositorio dentro de la máquina virtual.
 
     
+    
     - name: Set up JDK 8
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         distribution: temurin
         java-version: '8'
+
     - name: Verify Java installation
       shell: bash
       run: |
