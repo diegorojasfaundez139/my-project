@@ -28,6 +28,7 @@ jobs:
         distribution: temurin
         java-version: '8'
     - name: Verify Java installation
+      shell: bash
       run: |
         echo "$JAVA_HOME"
         java -version
